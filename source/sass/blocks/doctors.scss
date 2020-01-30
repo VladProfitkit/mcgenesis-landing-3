@@ -56,13 +56,14 @@
 }
 
 .doctors__doc-photo {
-  margin-right: 25px;
+  width: 105px;
+  border-radius: 50%;
 }
 
 .doctors__doc-info {
   @include reset;
   @include d-flex(nowrap, column, flex-start, center);
-  width: 285px;
+  width: 295px;
 }
 
 .doctors__doc-name {
@@ -92,6 +93,10 @@
 
   .doctors__doc {
     flex-direction: row;
+  }
+
+  .doctors__doc-photo {
+    margin-right: 25px;
   }
 
   .doctors__doc-info {

@@ -28,7 +28,7 @@
 @media (min-width: $tablet-width) {
   .infertility {
     padding-bottom: 450px;
-    background-image: url("../img/image-couple.png");
+    background-image: url("../img/image-bg.jpg");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center bottom 25px;
@@ -41,6 +41,7 @@
     // background-position: center 78px top 234px;
     background-position-x: calc(50% + 397px);
     background-position-y: 234px;
+    background-size: 500px;
   }
 
   .infertility__item-description {
