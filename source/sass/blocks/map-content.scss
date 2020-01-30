@@ -1,0 +1,39 @@
+.map-content {
+  position: relative;
+}
+
+.map-content__wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  max-width: 654px;
+  max-height: 726px;
+  padding: 12px;
+  font-size: 13px;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 7px 1px rgba(0,0,0,0.3);
+  overflow: hidden;
+  z-index: 99999;
+}
+
+.map-content__heading {
+  margin: 15px 0 0;
+  font-family: "Neucha", sans-serif;
+  font-size: 45px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.map-content__paragraph {
+  font-family: "Roboto", "Arial", sans-serif;
+  line-height: 25px;
+  font-weight: 300;
+  font-size: 13px;
+  color: #242424;
+}
+
+.map-content__paragraph strong {
+  font-weight: bold;
+}

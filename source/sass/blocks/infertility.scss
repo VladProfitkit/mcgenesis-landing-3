@@ -28,20 +28,41 @@
 @media (min-width: $tablet-width) {
   .infertility {
     padding-bottom: 450px;
-    background-image: url("../img/image-bg.jpg");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center bottom 25px;
+
+    &--infertility {
+      background-image: url("../images/landings/image-couple.png");
+    }
+
+    &--d-doctor {
+      background-image: url("../images/landings/image-sad.png");
+    }
+
+    &--ultrasound {
+      background-image: url("../images/landings/image-bg.jpg");
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .infertility {
     padding-bottom: 75px;
-    // background-position: center 78px top 234px;
     background-position-x: calc(50% + 397px);
-    background-position-y: 234px;
-    background-size: 500px;
+
+    &--infertility {
+      background-position-y: 234px;
+    }
+
+    &--d-doctor {
+      background-position-y: 170px;
+    }
+
+    &--ultrasound {
+      background-position-y: 234px;
+      background-size: 500px;
+    }
   }
 
   .infertility__item-description {

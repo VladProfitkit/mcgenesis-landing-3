@@ -5,13 +5,30 @@
 
   &::before {
     @include abs-pseudo;
-    display: none;
     top: 480px;
     left: calc(50% - 430px);
+    display: none;
     width: 1px;
-    height: 700px;
     background-color: $main-color;
     z-index: 1;
+  }
+
+  &--infertility {
+    &::before {
+      height: 800px;
+    }
+  }
+
+  &--d-doctor {
+    &::before {
+      height: 360px;
+    }
+  }
+
+  &--ultrasound {
+    &::before {
+      height: 700px;
+    }
   }
 }
 
@@ -214,10 +231,28 @@
 @media (min-width: $tablet-width) {
   .what-to-do {
     &::before {
-      top: 565px;
       left: calc(50% - 317px);
       display: block;
-      height: 1100px;
+    }
+
+    &--infertility {
+      &::before {
+        top: 535px;
+        height: 910px;
+      }
+    }
+
+    &--d-doctor {
+      &::before {
+        top: 720px;
+      }
+    }
+
+    &--ultrasound {
+      &::before {
+        top: 565px;
+        height: 1170px;
+      }
     }
   }
 
@@ -229,7 +264,7 @@
   .what-to-do__notice {
     flex-direction: row;
     width: 711px;
-    height: 113px;
+    min-height: 113px;
     padding: 30px 70px 30px 90px;
   }
 
@@ -302,9 +337,26 @@
 @media (min-width: $desktop-width) {
   .what-to-do {
     &::before {
-      top: 480px;
       left: calc(50% - 430px);
-      height: 1020px;
+    }
+
+    &--infertility {
+      &::before {
+        top: 480px;
+      }
+    }
+
+    &--d-doctor {
+      &::before {
+        top: 735px;
+      }
+    }
+
+    &--ultrasound {
+      &::before {
+        top: 530px;
+        height: 1055px;
+      }
     }
   }
 
