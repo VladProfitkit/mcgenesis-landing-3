@@ -6,6 +6,8 @@
 }
 
 .ymaps-2-1-75-balloon {
+  top: auto !important;
+  bottom: 0 !important;
   left: 0 !important;
   transform: translateX(-50%);
 }
