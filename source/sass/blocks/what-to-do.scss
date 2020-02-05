@@ -143,12 +143,20 @@
 
   &--alert {
     color: #a50084;
-    font-size: 16px;
+    // font-size: 16px;
+  }
+
+  &--notice {
+    color: $darker-main-color;
   }
 }
 
 .what-to-do__block-list {
   @include list-reset;
+
+  &--noblock {
+    margin: 0 auto 50px;
+  }
 }
 
 .what-to-do__list-item {
@@ -206,7 +214,7 @@
 }
 
 .what-to-do__photo-block {
-  @include d-flex(nowrap, row, flex-end, flex-start);
+  @include d-flex(wrap, row, center, center);
   margin-bottom: 68px;
 }
 
@@ -214,6 +222,7 @@
   @include d-flex(nowrap, column, flex-start, center);
   width: 100%;
   max-width: 300px;
+  margin-bottom: 40px;
 }
 
 .what-to-do__photo-heading {
@@ -229,6 +238,30 @@
   margin-bottom: 10px;
 }
 
+.what-to-do__quote {
+  @include reset;
+  display: block;
+  max-width: 300px;
+  // margin: 0 auto;
+  padding: 20px;
+  hyphens: auto;
+  text-align: center;
+  background-color: $main-color;
+  border-radius: 50px;
+}
+
+.what-to-do__quote-text {
+  @include reset;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.what-to-do__quote-author {
+  @include reset;
+  font-size: 18px;
+}
+
 @media (min-width: $tablet-width) {
   .what-to-do {
     &::before {
@@ -238,21 +271,22 @@
 
     &--infertility {
       &::before {
-        top: 535px;
-        height: 910px;
+        top: 590px;
+        height: 1050px;
       }
     }
 
     &--d-doctor {
       &::before {
-        top: 720px;
+        top: 880px;
+        height: 400px;
       }
     }
 
     &--ultrasound {
       &::before {
-        top: 565px;
-        height: 1170px;
+        top: 625px;
+        height: 1800px;
       }
     }
   }
@@ -335,6 +369,10 @@
   // width: 610px;
 }
 
+.what-to-do__quote {
+  max-width: 610px;
+}
+
 @media (min-width: $desktop-width) {
   .what-to-do {
     &::before {
@@ -343,20 +381,21 @@
 
     &--infertility {
       &::before {
-        top: 480px;
+        top: 540px;
+        height: 1000px;
       }
     }
 
     &--d-doctor {
       &::before {
-        top: 735px;
+        top: 850px;
       }
     }
 
     &--ultrasound {
       &::before {
         top: 530px;
-        height: 1055px;
+        height: 1450px;
       }
     }
   }
@@ -404,5 +443,27 @@
 
   .what-to-do__photo-block {
     justify-content: center;
+    align-items: stretch;
+    padding-left: 100px;
+  }
+
+  .what-to-do__photo-wrapper {
+    max-width: 420px;
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+
+  .what-to-do__quote {
+    @include d-flex(nowrap, column, center, center);
+    max-width: 340px;
+    padding: 30px;
+  }
+
+  .what-to-do__quote-text {
+    max-width: 100%;
+  }
+
+  .what-to-do__quote-author {
+    max-width: 100%;
   }
 }

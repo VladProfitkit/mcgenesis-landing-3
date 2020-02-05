@@ -7,8 +7,8 @@ body {
   padding: 0;
   overflow-x: hidden;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 24px;
   font-family: "Calibri", sans-serif;
   color: #000;
   background-color: #fff;
@@ -47,6 +47,11 @@ a {
 #container_wrap,
 #main {
   min-width: 0;
+}
+
+#container_wrap {
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .wrapper {
