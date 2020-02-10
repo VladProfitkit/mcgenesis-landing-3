@@ -34,23 +34,31 @@
 
 @media (min-width: $tablet-width) {
   .infertility {
-    padding-bottom: 450px;
+    // padding-bottom: 450px;
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: center bottom 25px;
+    // background-position: center bottom 25px;
 
     &--infertility {
       background-image: url("../images/landings/image-couple.png");
-      background-size: 80%;
+      background-position: center top 185px;
+      // background-size: 80%;
     }
 
     &--d-doctor {
       background-image: url("../images/landings/image-sad.png");
+      background-position: center top 160px;
     }
 
     &--ultrasound {
       background-image: url("../images/landings/image-bg.jpg");
+      background-size: 500px;
+      background-position: center top 200px;
     }
+  }
+
+  .infertility__heading {
+    padding-bottom: 450px;
   }
 }
 
@@ -60,17 +68,21 @@
     background-position-x: calc(50% + 397px);
 
     &--infertility {
-      background-position-y: 444px;
+      // background-position-y: 444px;
+      background-position-y: 275px;
     }
 
     &--d-doctor {
-      background-position-y: 170px;
+      background-position-y: 205px;
     }
 
     &--ultrasound {
-      background-position-y: 234px;
-      background-size: 500px;
+      background-position-y: 400px;
     }
+  }
+
+  .infertility__heading {
+    padding-bottom: 0;
   }
 
   .infertility__item-description {
